@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-int  getSmallestPrimeFactor(int n) {
+int  getSmallestPrimeFactor(long n) {
     int i = 2;
     while (1) {
         if (n % i == 0) {
@@ -21,4 +21,5 @@ int main(void) {
         n /= f;
     }
     printf("%d\n", f);
+    return 0;
 }

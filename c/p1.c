@@ -12,4 +12,5 @@ int main(void) {
         }
     }
     printf("%li\n", sum);
+    return 0;
 }

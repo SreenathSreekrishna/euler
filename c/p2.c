@@ -17,4 +17,5 @@ int main(void) {
         curr = s;
     }
     printf("%d\n", sum);
+    return 0;
 }
