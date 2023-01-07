@@ -25,4 +25,5 @@ int main(void) {
         sum += bigNumber[i];
     }
     printf("%d\n", sum);
+    return 0;
 }
