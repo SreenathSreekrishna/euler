@@ -1,5 +1,5 @@
-//
-//
+//https://projecteuler.net/problem=18
+//Maximum Path Sum I
 
 #include <stdio.h>
 
@@ -21,7 +21,21 @@ int main(void) {
         {63, 66, 04, 68, 89, 53, 67, 30, 73, 16, 69, 87, 40, 31, 0},
         {04, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 04, 23}
     };
-    for (int i = 0; i<15; i++) {
-        
+    int max = -1;
+    for (int i = 0; i<16384; i++) {
+        int idx = 0;
+        int val = i;
+        int n = 0;
+        int sum = triangle[0][0];
+        for (int m = 1; m<15; m++) {
+            n += val % 2;
+            val /= 2;
+            sum += triangle[m][n];
+        }
+        if (sum > max) {
+            max = sum;
+        }
     }
+    printf("%d\n", max);
+    return 0;
 }
