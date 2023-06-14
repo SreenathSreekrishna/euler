@@ -27,12 +27,10 @@ int main(void) {
         }
     }
 
-    int *sumAbundants = malloc(numAbundants*numAbundants*sizeof(int));
     int canBeExpressed[56248] = {0};
     for (int i = 0; i<numAbundants; i++) {
         for (int j = 0; j<numAbundants; j++) {
             int v = abundants[i] + abundants[j];
-            sumAbundants[i*numAbundants+j] = v;
             canBeExpressed[v] = 1;
         }
     }
@@ -44,6 +42,5 @@ int main(void) {
         }
     }
     printf("%d\n", s);
-    free(sumAbundants);
     return 0;
 }
