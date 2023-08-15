@@ -19,4 +19,5 @@ int main(void) {
         pos += numDigits;
     }
     printf("%d\n", d[0]*d[9]*d[99]*d[999]*d[9999]*d[99999]*d[999999]);
+    return 0;
 }

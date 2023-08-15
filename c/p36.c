@@ -18,7 +18,7 @@ int palindrome(int n, int b) {
         }
     }
     free(num);
-    return 1;
+    return 0;
 }
 
 int main() {
