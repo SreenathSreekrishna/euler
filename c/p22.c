@@ -28,7 +28,7 @@ int getLetterScore(char name[16]) {
 
 int main(void) {
     char *buff;
-    FILE *f = fopen("../files/names.txt", "r");
+    FILE *f = fopen("../files/0022_names.txt", "r");
     if (f == NULL) {
         printf("Error opening input file!");
         return 1;
