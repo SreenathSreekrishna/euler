@@ -1,4 +1,4 @@
-//https://projecteuler.net/problem=44
+//https://projecteuler.net/problem=45
 //Triangular, Pentagonal, and Hexagonal
 
 #include <stdio.h>
