@@ -29,4 +29,5 @@ int main(void) {
         d[3] = distinctPrimeFactors(n+3);
     }
     printf("%d\n",n);
+    return 0;
 }
