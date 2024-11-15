@@ -41,7 +41,7 @@ long long normalize(int arr1[5], int arr2[5]) {
     return s/10;
 }
 
-void permuteRec(int* arr, int idx, int n, int *index, int storage[120][5]) {
+void permute(int* arr, int idx, int n, int *index, int storage[120][5]) {
     if (idx == n - 1) {
         for (int j = 0; j<n; j++) {
             storage[*index][j] = arr[j];
@@ -52,7 +52,7 @@ void permuteRec(int* arr, int idx, int n, int *index, int storage[120][5]) {
 
     for (int i = idx; i < n; i++) {
         swap(&arr[idx], &arr[i]);
-        permuteRec(arr, idx + 1, n, index, storage);
+        permute(arr, idx + 1, n, index, storage);
         swap(&arr[idx], &arr[i]);
     }
 }
@@ -68,9 +68,9 @@ int main(void) {
 
     int i = 0;
     
-    permuteRec(outer,0,5, &i, outerPerms);
+    permute(outer,0,5, &i, outerPerms);
     i = 0;
-    permuteRec(inner,0,5, &i, innerPerms);
+    permute(inner,0,5, &i, innerPerms);
 
     long long max = 0;
 
