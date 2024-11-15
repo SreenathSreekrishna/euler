@@ -63,4 +63,5 @@ int main(void) {
     printf("%d\n", max);
 
     free(buff);
+    return 0;
 }
