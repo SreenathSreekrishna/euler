@@ -53,4 +53,5 @@ int main(void) {
         n += phi(d);
     }
     printf("%ld\n", n);
+    return 0;
 }

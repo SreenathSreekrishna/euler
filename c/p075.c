@@ -85,4 +85,5 @@ int main(void) {
         free(triplets[i]);
     }
     free(triplets);
+    return 0;
 }
