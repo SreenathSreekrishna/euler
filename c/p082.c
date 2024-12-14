@@ -24,7 +24,7 @@ long normalize(int i, int j) {
 }
 
 int main(void) {
-    FILE *f = fopen("../files/0082_matrix.txt", "r");
+    FILE *f = fopen("../files/p082_matrix.txt", "r");
     if (f == NULL) {
         printf("Error opening input file!");
         return 1;

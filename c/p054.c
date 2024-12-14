@@ -238,7 +238,7 @@ int winner(Card hand1Unsorted[5], Card hand2Unsorted[5]) {
 
 int main(void) {
     char *buff;
-    FILE *f = fopen("../files/0054_poker.txt", "r");
+    FILE *f = fopen("../files/p054_poker.txt", "r");
     if (f == NULL) {
         printf("Error opening input file!");
         return 1;

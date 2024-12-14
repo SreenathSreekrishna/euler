@@ -112,7 +112,7 @@ int dijkstra() {
 }
 
 int main(void) {
-    FILE *f = fopen("../files/0083_matrix.txt", "r");
+    FILE *f = fopen("../files/p083_matrix.txt", "r");
     if (f == NULL) {
         printf("Error opening input file!\n");
         return 1;

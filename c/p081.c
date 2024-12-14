@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 int main(void) {
-    FILE *f = fopen("../files/0081_matrix.txt", "r");
+    FILE *f = fopen("../files/p081_matrix.txt", "r");
     if (f == NULL) {
         printf("Error opening input file!");
         return 1;

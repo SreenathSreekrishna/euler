@@ -9,7 +9,7 @@ int main(void) {
     //which must be the space character; and as the 80 occurs on the third position;
     //80^c = 32; where abc is the key. this means c = 112, or 'p'
     char *buff;
-    FILE *f = fopen("../files/0059_cipher.txt", "r");
+    FILE *f = fopen("../files/p059_cipher.txt", "r");
     if (f == NULL) {
         printf("Error opening input file!");
         return 1;

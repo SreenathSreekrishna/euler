@@ -6,7 +6,7 @@
 
 int main(void) {
     char *buff;
-    FILE *f = fopen("../files/0067_triangle.txt", "r");
+    FILE *f = fopen("../files/p067_triangle.txt", "r");
     if (f == NULL) {
         printf("Error opening input file!");
         return 1;

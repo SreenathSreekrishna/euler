@@ -22,7 +22,7 @@ int wordValue(char *word) {
 
 int main(void) {
     char *buff;
-    FILE *f = fopen("../files/0042_words.txt", "r");
+    FILE *f = fopen("../files/p042_words.txt", "r");
     if (f == NULL) {
         printf("Error opening input file!");
         return 1;

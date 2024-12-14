@@ -48,7 +48,7 @@ int numeralDigits(int n) {
 }
 
 int main(void) {
-    FILE *f = fopen("../files/0089_roman.txt", "r");
+    FILE *f = fopen("../files/p089_roman.txt", "r");
     if (f == NULL) {
         printf("Error opening input file!\n");
         return 1;

@@ -26,7 +26,7 @@ void delete(int i) {
 }
 
 int main(void) {
-    FILE *f = fopen("../files/0079_keylog.txt", "r");
+    FILE *f = fopen("../files/p079_keylog.txt", "r");
     if (f == NULL) {
         printf("Error opening input file!");
         return 1;
