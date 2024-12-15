@@ -8,7 +8,6 @@ int cmp(int a, int p1, int b, int p2) {
     //returns if a^p1 > b^p2
     double v1 = (double) p1*(double) log(a);
     double v2 = (double) p2 * (double) log(b);
-    printf("%f %f\n", v1,v2);
     return  v1> v2;
 }
 
@@ -32,4 +31,5 @@ int main(void) {
         }
     }
     printf("%d\n", maxi+1);
+    return 0;
 }
