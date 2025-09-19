@@ -12,4 +12,5 @@ int main(void) {
         s += 2*n*a;
     }
     printf("%d\n", s);
+    return 0;
 }
