@@ -12,10 +12,6 @@ typedef struct Line {
     double y2;
 } Line;
 
-void printline(Line l) {
-    printf("(%f %f) to (%f %f)\n", l.x1, l.y1, l.x2, l.y2);
-}
-
 int abs(int n) {
     if (n<0) return -n;
     return n;
