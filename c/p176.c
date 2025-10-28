@@ -13,7 +13,7 @@ int main(void) {
     //Thus we only consider N even. => 2*M+1 = d(N^2 / 4)
     //this means the exponents are just 1 less than the prime factorization of 2*M+1.
     //We order the prime factors of 2*M+1 in decreasing order and assign the largest exponent to least
-    //prime (3) and so on.
+    //prime (2) and so on.
     int primes[16] = {2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53}; //can write sieve but meh whatever
     int primeFactors[16];
     int numFactors = 0;
