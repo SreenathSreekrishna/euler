@@ -2,7 +2,6 @@
 //Iterative Circle Packing
 
 #include <stdio.h>
-#include <stdlib.h>
 #include <math.h>
 #define N 10
 #define MEMBOUND 100000
