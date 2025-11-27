@@ -2,7 +2,6 @@
 //Flea Circus
 
 #include <stdio.h>
-#include <math.h>
 #define N 30
 #define M 50
 
