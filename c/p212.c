@@ -1,5 +1,5 @@
-// //https://projecteuler.net/problem=212
-// //Combined Volume of Cuboids
+//https://projecteuler.net/problem=212
+//Combined Volume of Cuboids
 
 #include <stdio.h>
 #define N 50000
