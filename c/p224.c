@@ -1,4 +1,4 @@
-//https://projecteuler.net/problem=223
+//https://projecteuler.net/problem=224
 //Almost Right-angled Triangles II
 
 #include <stdio.h>
