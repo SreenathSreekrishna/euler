@@ -20,8 +20,6 @@ long long numRolls(int topsum, int rolls[20], int idx) {
             else sum += freq[i]*i;
             numLeft -= freq[i];
         }
-        //for (int i = 0; i<20; i++) printf("%d ", rolls[i]);
-        //printf("\n%d\n", sum);
         if (sum != topsum) return 0;
         long long num = fac20;
         for (int i = 1; i<=12; i++)
