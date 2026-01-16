@@ -2,7 +2,6 @@
 //250250
 
 #include <stdio.h>
-#define MAX 249*250/2
 #define MOD 10000000000000000
 
 int nnmod250(int n) {
