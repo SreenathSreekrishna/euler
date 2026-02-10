@@ -1,36 +1,7 @@
-// //https://projecteuler.net/problem=252
-// //Convex Holes
-
-// #include <stdio.h>
-// #define N 20
-
-// typedef struct Pointoint {
-//     int x;
-//     int y;
-// } Pointoint;
-
-// int main(void) {
-//     long S = 290797;
-//     Pointoint pointpoints[N];
-//     for (int i = 0; i<N; i++) {
-//         S = (S*S) % 50515093;
-//         int x = (S%2000) - 1000;
-//         S = (S*S) % 50515093;
-//         int y = (S%2000) - 1000;
-//         pointpoints[i] = (Pointoint) {x,y};
-//     }
-//     for (int i = 0; i<N; i++) {
-//         printf("(%d, %d)\n", pointpoints[i].x, pointpoints[i].y);
-//     }
-//     return 0;
-// }
+//https://projecteuler.net/problem=252
+//Convex Holes
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <stdint.h>
-#include <string.h>
-#include <math.h>
-
 #define N 500
 #define BITS (((N)+63)/64)
 
@@ -53,6 +24,12 @@ long long before[N][N][BITS] = {0};
 long long cross(Point a, Point b, Point c) {
     return (long long)(b.x - a.x)*(c.y - a.y) - (long long)(b.y - a.y)*(c.x - a.x);
 }
+
+long long llabs(long long x) {
+    if (x<0) return -x;
+    return x;
+}
+
 double area(Point a, Point b, Point c) {
     return (double) llabs(cross(a,b,c)) * 0.5;
 }
